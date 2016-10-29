@@ -1,0 +1,90 @@
+._client_src_components_Base__title {
+  color: white;
+  font-size: 4em;
+  background-color: #388E3C;
+  text-align: center;
+}
+
+._client_src_components_Base__container {
+  background: #eee;
+  min-height: 800px;     
+}
+ 
+._client_src_components_Base__nav ul {
+  list-style: none;
+  background-color: #388E3C;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+._client_src_components_Base__nav li {
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 40px;
+}
+ 
+._client_src_components_Base__nav a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transition: .3s background-color;
+}
+ 
+._client_src_components_Base__nav a:hover {
+  background-color: #58AE5C;
+}
+ 
+._client_src_components_Base__nav a._client_src_components_Base__active {
+  background-color: #fff;
+  color: #444;
+  cursor: default;
+}
+ 
+@media screen and (min-width: 600px) {
+  ._client_src_components_Base__nav li {
+    width: 120px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+  }
+ 
+  ._client_src_components_Base__nav li {
+    display: inline-block;
+    margin-right: -4px;
+  }
+}
+._client_src_components_AddBook__books {
+  margin: 10px;
+  padding: 10px;
+  vertical-align: 'bottom';
+}
+._client_src_components_MyBooks__bookImg {
+  margin: 10px;
+}
+._client_src_components_MyBooks__bookDiv {
+  position: relative;
+  vertical-align: 'bottom';
+  float:left;
+}
+._client_src_components_MyBooks__delete {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-size: 14px;
+  font-weight: bolder;
+  color: white;
+  background-color: darkred;
+  border-radius: 3px;
+  display: none;
+  z-index: 999;
+  cursor: pointer;
+}
+
+._client_src_components_MyBooks__bookDiv:hover ._client_src_components_MyBooks__delete {
+    display: block;
+}
+
+._client_src_components_MyBooks__clear {
+  clear: both;
+}

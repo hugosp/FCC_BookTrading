@@ -1,0 +1,29 @@
+.bookImg {
+  margin: 10px;
+}
+.bookDiv {
+  position: relative;
+  vertical-align: 'bottom';
+  float:left;
+}
+.delete {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-size: 14px;
+  font-weight: bolder;
+  color: white;
+  background-color: darkred;
+  border-radius: 3px;
+  display: none;
+  z-index: 999;
+  cursor: pointer;
+}
+
+.bookDiv:hover .delete {
+    display: block;
+}
+
+.clear {
+  clear: both;
+}

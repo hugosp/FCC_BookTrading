@@ -1,0 +1,51 @@
+{
+  "name": "fcc_booktrading",
+  "main": "server.js",
+  "scripts": {
+    "build-js": "browserify -t [ babelify --presets [ react es2015 ] ] -p [ css-modulesify -o public/css/main.css ] ./client/src/app.jsx -o public/js/app.js",
+    "watch-js": "nodemon -e js*,css -w client/src -x 'npm run build-js'",
+    "watch-node": "nodemon server.js --ignore client/ --ignore public/",
+    "watch": "npm run watch-js & npm run watch-node",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "babelify": "^7.3.0",
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.15.0",
+    "css-modulesify": "^0.25.1",
+    "express": "^4.13.4",
+    "google-books-search": "^0.3.0",
+    "jsonwebtoken": "^5.7.0",
+    "mongoose": "^4.4.5",
+    "morgan": "^1.7.0",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "react-router": "^2.8.1",
+    "superagent": "^2.3.0",
+    "validator": "^6.1.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.17.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
+    "webpack": "^1.13.2"
+  },
+  "description": "BookTrading",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hugosp/FCC_BookTrading.git"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "react"
+  ],
+  "author": "Hewgo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hugosp/FCC_BookTrading/issues"
+  },
+  "homepage": "https://github.com/hugosp/FCC_BookTrading#readme"
+}
